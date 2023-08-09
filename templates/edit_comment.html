@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}MovieWeb App{% endblock %}
+{% block content %}
+<h1 class='mt-5 text-center'>Edit Your Review</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/static/gita-104.jpg" class="img-fluid" alt="bg image">
+        </div>
+        <div class="col-md-6">
+            <form method="POST" action="{{ url_for('crud.edit_comment', comment_id=comment.id) }}">
+                <div class="mb-3">
+                                        {{form.email.label}}
+										{{form.email(class='form-control', value=comment.email) }}
+										{{form.subject.label}}
+										{{form.subject(class='form-control', value=comment.subject)}}
+                </div>
+                <div class="mb-3">
+                                        {{form.comment_text.label}}
+										{{form.comment_text(class='form-control', value=comment.comment_text, rows=6)}}
+                </div>
+								<input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>	
+                                <div class='row'>
+                                <div class='col'>
+                                <button type="submit" class="btn btn-warning mt-3">Submit</button>
+                                </form>
+                                </div>
+                                <div class='col'>
+                                <form method='POST' action="{{ url_for('crud.delete_comment', comment_id=comment.id, movie_id=movie_id) }}">
+								<button type="submit" class="ms-3 btn btn-danger mt-3">Delete</button>
+                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>	
+                                </form>
+                                </div>
+                                </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

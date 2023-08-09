@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Login!{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row mb-4">
+        <h1 class="text-center mb-4">Login!</h1>
+        <div class="col-md-6">
+            <img src="/static/gita-102.jpg" class="rounded img-fluid" alt="bg image">
+        </div>
+        <div class="col-md-6">
+            <form method="POST" action="{{ url_for('auth.login', theme=user_theme) }}">
+                <div class="mb-3">
+										<input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                                        {{form.email.label}}
+										{{form.email(class='mt-2 form-control')}}
+										{{form.password.label}}
+										{{form.password(class='mt-2 form-control')}}
+                </div>
+                <button type="submit" class="btn btn-warning mt-3">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

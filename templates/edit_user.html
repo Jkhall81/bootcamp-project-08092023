@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}MovieWeb App{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/static/bg.jpg" class="img-fluid" alt="bg image">
+        </div>
+        <div class="col-md-6">
+            <form method="POST" action="{{ url_for('crud.edit_user', user_id=user.id) }}">
+                <div class="mb-3">
+                    {{form.name.label}}
+										{{form.name(class='form-control', placeholder=user.name) }}
+										{{form.email.label}}
+										{{form.email(class='form-control', placeholder=user.email)}}
+                </div>
+                <div class="mb-3">
+                    {{form.bio.label}}
+										{{form.bio(class='form-control', placeholder=user.bio, rows=6)}}
+                </div>
+								<input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>	
+                <button type="submit" class="btn btn-warning mt-3">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

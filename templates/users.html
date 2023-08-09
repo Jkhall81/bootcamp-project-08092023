@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Users - MovieWeb App{% endblock %}
+{% block content %}
+<h1 class="mt-5 mb-5 text-center my-2">Users</h1>
+<div class="row">
+    <div class="d-flex flex-column justify-content-center col-md-6">
+        {% for user in users%}
+        <div class="card mx-4 my-4" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title"><a href="{{ url_for('crud.list_user_movies', user_id=user.id, theme=user_theme) }}">{{ user.name }}</a>
+                </h5>
+                <p class="card-text">Bio: {{ user.bio }}</p>
+                {% if current_user.id == user.id %}
+                <a href="{{ url_for('crud.edit_user', user_id=user.id, theme=user_theme) }}" class="card-link">Edit User</a>
+                <a href="{{ url_for('crud.delete_user', user_id=user.id, theme=user_theme ) }}" class="card-link">Delete User</a>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="d-flex flex-column justify-content-center col-md-5">
+        <img src="{{ url_for('static', filename='bg1.jpg') }}" class="img-fluid" alt="bg image">
+    </div>
+
+</div>
+{% endblock %}

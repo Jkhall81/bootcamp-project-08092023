@@ -1,0 +1,59 @@
+<nav id='navbar' class="navbar navbar-expand-lg bg-warning">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ url_for('home', theme=user_theme) }}">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('auth.login', theme=user_theme) }}">Login</a>
+        </li>
+				{% if user.is_authenticated %}
+				<li class="nav-item">
+          <a class="nav-link" href="{{ url_for('auth.logout', theme=user_theme) }}">Logout</a>
+        </li>
+				{% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('auth.add_user', theme=user_theme) }}">Register</a>
+        </li>
+				{% endif %}
+        <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('crud.list_users', theme=user_theme) }}">Select User</a>
+                </li>
+                {% if request.endpoint == 'crud.list_user_movies' and logged_in_user.id == user.id %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('crud.add_movie', user_id=user_id, theme=user_theme) }}">Add Movie</a>
+                </li>
+                {% endif %}
+      </ul>
+			<form action="{{ url_for('home') }}" method='POST'>
+			<div class='form-check form-switch mx-4'>
+			<label>Dark Mode</label>	
+			<input 
+				class='form-check-input p-2'
+				type='checkbox'
+				role='switch'
+				id='darkModeInput'
+				name='theme'
+				onclick='myFunction()'
+			/>
+			<input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+			<button type='submit' style='display: none;'></button>
+			</div>
+			</form>
+    </div>
+  </div>
+	<script>
+		function myFunction() {
+			let element = document.body;
+			let newTheme = element.dataset.bsTheme = 
+			element.dataset.bsTheme == 'dark' ? 'light' : 'dark';
+
+			let url = new URL(window.location.href);
+			url.searchParams.set('theme', newTheme);
+			history.replaceState(null, null, url);
+			location.reload();
+		}
+	</script>
+</nav>

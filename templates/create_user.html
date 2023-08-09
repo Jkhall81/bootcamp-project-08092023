@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}MovieWeb App{% endblock %}
+{% block content %}
+<h1 class='text-center mt-4'>Sign Up</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/static/gita-103.jpg" class="rounded img-fluid" alt="bg image">
+        </div>
+        <div class="col-md-6">
+            <form method="POST" action="{{ url_for('auth.add_user') }}">
+                <div class="mb-3">
+										<input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    {{form.name.label}}
+                    {{form.name(class='form-control')}}
+                    {{form.email.label}}
+                    {{form.email(class='form-control')}}
+                    {{form.password.label}}
+                    {{form.password(class='form-control')}}
+                    {{form.confirm_password.label}}
+                    {{form.confirm_password(class='form-control')}}
+                </div>
+                <div class="mb-3">
+                    {{form.bio.label}}
+                    {{form.bio(class='form-control', rows=6)}}
+                </div>
+                <button type="submit" class="btn btn-warning mt-3">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,192 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Alice",
+            "bio": "blank",
+            "movies": [
+                {
+                    "id": 1,
+                    "name": "Rambo",
+                    "director": "Sylvester Stallone",
+                    "year": "2008",
+                    "plot": "In Thailand, John Rambo joins a group of mercenaries to venture into war-torn Burma, and rescue a group of Christian aid workers who were kidnapped by the ruthless local infantry unit.",
+                    "rating": "7.0",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BMTI5Mjg1MzM4NF5BMl5BanBnXkFtZTcwNTAyNzUzMw@@._V1_SX300.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Rob Roy",
+                    "director": "Michael Caton-Jones",
+                    "year": "1995",
+                    "plot": "In 1713 Scotland, Rob Roy MacGregor is wronged by a nobleman and his nephew, becomes an outlaw in search of revenge while fleeing the Redcoats, and faces charges of being a Jacobite.",
+                    "rating": "6.9",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BMjE2NTU2ODI0MV5BMl5BanBnXkFtZTcwNTIwODU2NA@@._V1_SX300.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Permanent Midnight",
+                    "director": "David Veloz",
+                    "year": "1998",
+                    "plot": "A comedy writer struggles to overcome his addiction to heroin while putting his professional and personal in danger.",
+                    "rating": "6.2",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BZDY1MGU5YTYtNzk3NC00MWE0LTljYjUtZDM2YzQyZmJkZDU4XkEyXkFqcGdeQXVyNjU0NTI0Nw@@._V1_SX300.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "The Matrix",
+                    "director": "Lana Wachowski, Lilly Wachowski",
+                    "year": "1999",
+                    "plot": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+                    "rating": "8.7",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "Candyman",
+                    "director": "Bernard Rose",
+                    "year": "1992",
+                    "plot": "The Candyman, a murderous soul with a hook for a hand, is accidentally summoned to reality by a skeptic grad student researching the monster's myth.",
+                    "rating": "6.7",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BYjVjYjhlNTQtN2UxOC00Njk5LWFjNDctODNjZTI1ZGM0ZDZkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                },
+                {
+                    "id": 6,
+                    "name": "Jason",
+                    "director": "Maasja Ooms",
+                    "year": "2021",
+                    "plot": "Maasja Ooms closely follows Jason as he struggles with the psychological effects of a traumatic childhood, which were only intensified when he was taken into juvenile residential care at the age of 16. During intense therapy sessi...",
+                    "rating": "7.7",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BNjI1ZDU1M2MtNDI3OC00OWYyLWIzMWQtY2UwYjNhYzA3YjA3XkEyXkFqcGdeQXVyODA0MjgyNzM@._V1_SX300.jpg"
+                },
+                {
+                    "id": 7,
+                    "name": "Silk Road",
+                    "director": "Tiller Russell",
+                    "year": "2021",
+                    "plot": "Philosophical twenty-something Ross Ulbricht creates Silk Road, a dark net website that sells drugs, while DEA agent Rick Bowden goes undercover to bring him down.",
+                    "rating": "6.0",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BZjM0NzMyMjUtYTE0ZS00YWNhLWFjMTItZTAwYWJkOGI5MGY3XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_SX300.jpg"
+                },
+                {
+                    "id": 15,
+                    "name": "Dumb and Dumber",
+                    "director": "Peter Farrelly, Bobby Farrelly",
+                    "year": "1994",
+                    "plot": "After a woman leaves a briefcase at the airport terminal, a dumb limo driver and his dumber friend set out on a hilarious cross-country road trip to Aspen to return it.",
+                    "rating": "7.3",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BZDQwMjNiMTQtY2UwYy00NjhiLTk0ZWEtZWM5ZWMzNGFjNTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Bob",
+            "bio": "blank",
+            "movies": [
+                {
+                    "id": 9,
+                    "name": "Rocky",
+                    "director": "John G. Avildsen",
+                    "year": "1976",
+                    "plot": "A small-time Philadelphia boxer gets a supremely rare chance to fight the world heavyweight champion in a bout in which he strives to go the distance for his self-respect.",
+                    "rating": "8.1",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BNTBkMjg2MjYtYTZjOS00ODQ0LTg0MDEtM2FiNmJmOGU1NGEwXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+                },
+                {
+                    "id": 13,
+                    "name": "Ace Ventura: Pet Detective",
+                    "director": "Tom Shadyac",
+                    "year": "1994",
+                    "plot": "A goofy detective specializing in animals goes in search of the missing mascot of the Miami Dolphins.",
+                    "rating": "6.9",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BYmVhNmFmOGYtZjgwNi00ZGQ0LThiMmQtOGZjMDUzNzJhMGIzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Arjuna",
+            "bio": "Warrior of Krisha, decent with a bow, and frequent driver of chariots.",
+            "movies": [
+                {
+                    "id": 10,
+                    "name": "Passion",
+                    "director": "Brian De Palma",
+                    "year": "2012",
+                    "plot": "The rivalry between the manipulative boss of an advertising agency and her talented prot\u00e9g\u00e9e escalates from stealing credit to public humiliation to murder.",
+                    "rating": "5.3",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BMjMwOTg4NjQ0MV5BMl5BanBnXkFtZTcwMTkzMDg2OQ@@._V1_SX300.jpg"
+                },
+                {
+                    "id": 11,
+                    "name": "G.I. Jane",
+                    "director": "Ridley Scott",
+                    "year": "1997",
+                    "plot": "A female Senator succeeds in enrolling a woman into Combined Reconnaissance Team training where everyone expects her to fail.",
+                    "rating": "6.0",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BODBkMWRmZWItZGQ3NC00ODA4LTlkYjAtODA3MzQ5Yjk4MGIzXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+                },
+                {
+                    "id": 12,
+                    "name": "Boogie Nights",
+                    "director": "Paul Thomas Anderson",
+                    "year": "1997",
+                    "plot": "Back when sex was safe, pleasure was a business and business was booming, an idealistic porn producer aspires to elevate his craft to an art when he discovers a hot young talent.",
+                    "rating": "7.9",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BY2E2YWYxY2QtZmJmZi00MjJlLWFiYWItZTk5Y2IyMWQ1ZThhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Timothy",
+            "bio": "blank",
+            "movies": [
+                {
+                    "id": 1,
+                    "name": "Alice in Wonderland",
+                    "director": "Tim Burton",
+                    "year": "2010",
+                    "plot": "Nineteen-year-old Alice returns to the magical world from her childhood adventure, where she reunites with her old friends and learns of her true destiny: to end the Red Queen's reign of terror.",
+                    "rating": "6.4",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BMTMwNjAxMTc0Nl5BMl5BanBnXkFtZTcwODc3ODk5Mg@@._V1_SX300.jpg"
+                },
+                {
+                    "id": 14,
+                    "name": "The Lion King",
+                    "director": "Roger Allers, Rob Minkoff",
+                    "year": "1994",
+                    "plot": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+                    "rating": "8.5",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SX300.jpg"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Jason",
+            "bio": "waiting to get hit by a plane.",
+            "movies": [
+                {
+                    "id": 1,
+                    "name": "Bloodsport",
+                    "director": "Newt Arnold",
+                    "year": "1988",
+                    "plot": "\"Bloodsport\" follows Frank Dux, an American martial artist serving in the military, who decides to leave the army to compete in a martial arts tournament in Hong Kong where fights to the death can occur.",
+                    "rating": "6.8",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BNTJmMGEzMTQtMzQzMi00YjE1LWI4MTctNjY0NWZiYzE2MDVhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+                },
+                {
+                    "id": 16,
+                    "name": "Princess Mononoke",
+                    "director": "Hayao Miyazaki",
+                    "year": "1997",
+                    "plot": "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.",
+                    "rating": "8.3",
+                    "poster": "https://m.media-amazon.com/images/M/MV5BNTZkYmI0MmEtNGFlZC00OWZjLWFjMmItMjk1OWZkOWJiZGVjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                }
+            ]
+        }
+    ]
+}

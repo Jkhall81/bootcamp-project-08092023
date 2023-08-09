@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}MovieWeb App{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row mb-4">
+        <h1 class="text-center mb-4">Add a Movie!</h1>
+        <div class="col-md-6">
+            <img src="/static/bg2.jpg" class="rounded img-fluid" alt="bg image">
+        </div>
+        <div class="col-md-6">
+            <form method="POST" action="{{ url_for('crud.add_movie', user_id=user.id) }}">
+                <div class="mb-3">
+										<input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    {{form.moviename.label}}
+										{{form.moviename(class='mt-2 form-control')}}
+                </div>
+                <button type="submit" class="btn btn-warning mt-3">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
